@@ -56,7 +56,7 @@ clf.fit(X_transformed, y_train)
 X_test_transformed = pca.transform(X_test)  # transform X_test
 
 pred = clf.predict(X_test_transformed)
-acc = accuracy_score(y_test, pred)      #accuracy ~ 96%
+acc = accuracy_score(y_test, pred)      #accuracy ~ 97%
 print "Accuracy score:", acc
 
 
