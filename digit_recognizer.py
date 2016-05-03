@@ -15,7 +15,7 @@ digits = pd.read_csv(in_file)
 display(digits.head())
 
 n_samples = digits.shape[0] # 42000 images
-digits_train = digits[:10000] # train on first 10000 values
+digits_train = digits[:n_samples / 2] # train on first 10000 values
 
 digits_test = digits[n_samples / 2:]    # test on last half of dataset
 display(digits_test.head())
@@ -56,7 +56,7 @@ X_test_transformed = pca.transform(X_test)  # transform X_test
 
 pred = clf.predict(X_test_transformed)
 acc = accuracy_score(y_test, pred)      #accuracy ~ 96%
-print acc
+print "Accuracy score:", acc
 
 
 
