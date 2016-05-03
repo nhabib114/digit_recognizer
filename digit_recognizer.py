@@ -1,5 +1,6 @@
 #This script gets an accuracy score of 97.3% on the second half of the train.csv dataset, which is taken from the
-#original MNIST training dataset of 60,000 images. The train.csv dataset has 42,000 images.
+#original MNIST training dataset of 60,000 images. The train.csv dataset has 42,000 images. It uses PCA with 100 features
+#and a second-degree polynomial SVM.
 
 import numpy as np
 import pandas as pd
