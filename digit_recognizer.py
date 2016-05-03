@@ -1,4 +1,4 @@
-#This script gets an accuracy score of 96.5% on the second half of the train.csv dataset, which is taken from the
+#This script gets an accuracy score of 97.3% on the second half of the train.csv dataset, which is taken from the
 #original MNIST training dataset of 60,000 images. The train.csv dataset has 42,000 images.
 
 import numpy as np
@@ -15,7 +15,7 @@ digits = pd.read_csv(in_file)
 display(digits.head())
 
 n_samples = digits.shape[0] # 42000 images
-digits_train = digits[:n_samples / 2] # train on first 10000 values
+digits_train = digits[:n_samples / 2] # train on first half of dataset
 
 digits_test = digits[n_samples / 2:]    # test on last half of dataset
 display(digits_test.head())
