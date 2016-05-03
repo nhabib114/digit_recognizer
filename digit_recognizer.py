@@ -1,3 +1,6 @@
+#This script gets an accuracy score of 96.5% on the second half of the train.csv dataset, which is taken from the
+#original MNIST training dataset of 60,000 images. The train.csv dataset has 42,000 images.
+
 import numpy as np
 import pandas as pd
 import csv as csv
@@ -40,9 +43,6 @@ print "\nFeature values:-"
 print X_test.head() 
 
 from sklearn.decomposition import PCA
-from sklearn.preprocessing import normalize
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 
